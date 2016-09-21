@@ -25,6 +25,8 @@ if (version_compare(PHP_VERSION, '5.5.9') < 0) {
   print 'Your PHP installation is too old. Drupal requires at least PHP 5.5.9. See the <a href="https://www.drupal.org/requirements">system requirements</a> page for more information.';
   exit;
 }
+// Insert xdebug change to make the installer works
+ini_set('xdebug.max_nesting_level',256);
 
 // Start the installer.
 $class_loader = require_once 'autoload.php';
