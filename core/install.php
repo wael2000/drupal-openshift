@@ -1,5 +1,5 @@
 <?php
-
+ini_set('xdebug.max_nesting_level',256);
 /**
  * @file
  * Initiates a browser-based installation of Drupal.
